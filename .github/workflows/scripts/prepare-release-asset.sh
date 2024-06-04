@@ -2,7 +2,7 @@
 
 # Create a copy of the plugin directory
 cd ..
-cp -r adyen-shopware6 AdyenPaymentShopware6
+cp -r adyen-shopware6-forked AdyenPaymentShopware6
 
 # Remove Shopware dependencies
 composer remove shopware/core --working-dir=./AdyenPaymentShopware6
@@ -16,7 +16,7 @@ rm -rf AdyenPaymentShopware6/vendor
 composer install --no-dev --working-dir=./AdyenPaymentShopware6
 
 # Copy original the composer.json file
-cp adyen-shopware6/composer.json AdyenPaymentShopware6/.
+cp  adyen-shopware6-forked/composer.json AdyenPaymentShopware6/.
 
 # Zip the plugin directory
 zip -r AdyenPaymentShopware6.zip AdyenPaymentShopware6/ ;
@@ -25,7 +25,7 @@ zip -r AdyenPaymentShopware6.zip AdyenPaymentShopware6/ ;
 zip -d AdyenPaymentShopware6.zip __MACOSX/\* ; zip -d AdyenPaymentShopware6.zip *.git*
 
 # Move the zip file to plugin folder
-mv AdyenPaymentShopware6.zip adyen-shopware6
+mv AdyenPaymentShopware6.zip  adyen-shopware6-forked
 
 # Go back to workflow's root directory
-cd adyen-shopware6
+cd  adyen-shopware6-forked
