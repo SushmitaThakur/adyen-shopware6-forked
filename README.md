@@ -1,3 +1,6 @@
+
+Test release 1
+
 # Adyen Payment plugin for Shopware 6
 This is a test line.
 Use Adyen's plugin for Shopware 6 to offer frictionless payments online, in-app, and in-store.
